@@ -2,7 +2,7 @@ export default class Validator {
     constructor (name=null, phone=null) {
         this.name = name;
         this.phone = phone;
-    };
+    }
 
     validateUserName () {
         const rightSymbols = /^[_-\w\d]+$/;
@@ -19,7 +19,7 @@ export default class Validator {
         } else if (endStr.test(this.name)) {
             throw new Error ("Name is mustn't end with this symbols. Please, try again!");
         }
-    };
+    }
 
     validatePhoneNumber () {
         const findNumbers = /\D+/g
